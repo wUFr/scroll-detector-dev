@@ -1,3 +1,3 @@
 [submodule "dist"]
 	path = dist
-	url = git@github.com:wUFr/scroll-detector.git
+	url = https://github.com/wUFr/scroll-detector.git
