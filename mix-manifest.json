@@ -1,8 +1,6 @@
 {
-    "/css/scrollDetector.demo.css": "/css/scrollDetector.demo.css",
-    "/css/scrollDetector.min.css": "/css/scrollDetector.min.css",
-    "/docs/scrollDetector.min.css": "/docs/scrollDetector.min.css",
-    "/docs/scrollDetector.demo.css": "/docs/scrollDetector.demo.css",
-    "/dist/css/scrollDetector.min.css": "/dist/css/scrollDetector.min.css",
-    "/dist/css/scrollDetector.demo.css": "/dist/css/scrollDetector.demo.css"
+    "/dist/js/scrollDetector.js": "/dist/js/scrollDetector.js",
+    "/dist/js/scrollDetector.init.js": "/dist/js/scrollDetector.init.js",
+    "/dist/css/scrollDetector.demo.css": "/dist/css/scrollDetector.demo.css",
+    "/dist/css/scrollDetector.css": "/dist/css/scrollDetector.css"
 }

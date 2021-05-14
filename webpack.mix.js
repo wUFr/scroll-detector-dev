@@ -1,16 +1,10 @@
+const { min } = require('bn.js');
 const mix = require('laravel-mix');
 
-//mix.js("./dist/ScrollDetector.init.js", "./docs/ScrollDetector.min.js")
+mix.ts("./ts/scrollDetector.ts",      "./dist/js/scrollDetector.js")
+mix.ts("./ts/scrollDetector.init.ts", "./dist/js/scrollDetector.init.js")
+
 
 // STYLES
-mix.less('./less/scrollDetector.less',     './css/scrollDetector.min.css')
-mix.less('./less/scrollDetector.demo.less','./css/scrollDetector.demo.css')
-
-// COPY INTO DOCS FOLDER FOR GITHUB PAGES STYLES
-mix.copy('./css/scrollDetector.min.css',  './docs/scrollDetector.min.css')
-mix.copy('./css/scrollDetector.demo.css', './docs/scrollDetector.demo.css')
-
-
-// COPY INTO DIST PACKAGE
-mix.copy('./css/scrollDetector.min.css',  './dist/css/scrollDetector.min.css')
-mix.copy('./css/scrollDetector.demo.css', './dist/css/scrollDetector.demo.css')
+mix.less('./less/scrollDetector.less',     './dist/css/scrollDetector.css')
+mix.less('./less/scrollDetector.demo.less','./dist/css/scrollDetector.demo.css')

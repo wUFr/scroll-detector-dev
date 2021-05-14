@@ -9,10 +9,10 @@
   },
   "include": ["ts/*"],
   "exclude": [
-      "node_modules",
-      "dist",
-      "docs",
-      "less",
-      "css"
+      "./node_modules",
+      "./dist",
+      "./docs",
+      "./less",
+      "./css"
   ]
 }
