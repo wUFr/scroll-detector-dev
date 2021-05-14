@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ScrollDetector - demo</title>
+
+
+	<script src="./scrollDetector.init.min.js" defer></script>
+
+	<link rel="stylesheet" href="./scrollDetector.min.css" />
+	<link rel="stylesheet" href="./scrollDetector.demo.css">
+</head>
+<body>
+
+	<div class="demo_page">
+		<h1>Scroll detector</h1>
+
+		<p>
+			<a href="https://github.com/wUFr/scroll-detector" target="_blank">https://github.com/wUFr/scroll-detector</a>
+		</p>
+
+		<p>
+			Detects if scrollable area is at the start or end of scroll to show gradiend (or other stuff of your liking)
+		</p>
+
+		<hr />
+
+		<h2>Horizontal scroll with shadows</h2>
+
+		<p>
+			This variant will always be <code>width:100%;</code> so element above it must have its width set (idealy, if you use some kind of grid system)
+		</p>
+
+		<div style="width:300px">
+			<div class="-js-scrollDetector-wrapper" data-scrollType="horizontal">
+				<div class="-js-scrollDetector-scroll">
+					<div class="-js-scrollDetector-content">
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<h2>Vertical scroll with shadows</h2>
+
+		<p>
+			This variant must be wrapped with element which has set <code>height</code>, otherwise it will just overflow it (flexbox with certain settings may work as well)
+		</p>
+
+		<div style="display:inline-flex;width:300px;height:150px">
+			<div class="-js-scrollDetector-wrapper" data-scrollType="vertical">
+				<div class="-js-scrollDetector-scroll">
+					<div class="-js-scrollDetector-content">
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+						<div class="item">Some item</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

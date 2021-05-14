@@ -1,0 +1,135 @@
+//
+// BASIC STYLES WITH SHADOWS AND FLEXBOX SETTINGS, 
+// YOU CAN USE THESE OR AT LEAST GET INSPIRED HERE
+//
+
+.-js-scrollDetector-wrapper {
+	position: relative;
+
+
+	&[data-scrollType="horizontal"] {
+		display: inline-block;
+		width: 100%;
+
+		// SHADOWS
+		&:before,
+		&:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+
+			width: 50px;
+
+			content: "";
+
+			pointer-events: none;
+			opacity: 0;
+
+			transition: 300ms;
+		}
+
+
+		// START SHADOW
+		&:before {
+			left: 0;
+			background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+		}
+
+		// SHOW START SHADOW
+		&.-js-start-shadow:before {
+			opacity: 1;
+		}
+
+
+		// END SHADOW
+		&:after {
+			right: 0;
+			background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+		}
+
+		// SHOW END SHADOW
+		&.-js-end-shadow:after {
+			opacity: 1;
+		}
+
+
+		// SCROLLING ELEMENT
+		.-js-scrollDetector-scroll {
+			width: auto;
+			max-width: 100%;
+			overflow-x: auto;
+			overflow-y: hidden;
+
+			// ACTUAL CONTENT
+			.-js-scrollDetector-content {
+				display: inline-flex;
+			}
+		}
+
+
+	}
+
+	&[data-scrollType="vertical"] {
+		display: flex;
+
+		width: 100%;
+		max-height: 100%;
+
+		// SHADOWS
+		&:before ,
+		&:after {
+			position: absolute;
+			left: 0;
+			right: 0;
+
+			height: 50px;
+
+			content: "";
+
+			pointer-events: none;
+			opacity: 0;
+
+			transition: 300ms;
+		}
+
+
+		// START SHADOW
+		&:before {
+			top: 0;
+			background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+		}
+
+		// SHOW START SHADOW
+		&.-js-start-shadow:before {
+			opacity: 1;
+		}
+
+
+		// END SHADOW
+		&:after {
+			bottom: 0;
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+		}
+
+		// SHOW END SHADOW
+		&.-js-end-shadow:after {
+			opacity: 1;
+		}
+
+
+		// SCROLLING ELEMENT
+		.-js-scrollDetector-scroll {
+			width: 100%;
+
+			overflow-x: hidden;
+			overflow-y: auto;
+
+			// ACTUAL CONTENT
+			.-js-scrollDetector-content {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+	}
+}

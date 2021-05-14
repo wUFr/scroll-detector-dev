@@ -1,0 +1,13 @@
+# just in case
+/node_modules
+
+# ISPconfig stats folder (for development and testing)
+/stats
+
+
+# These folders should have content generated via webpack, dont commit anything in there
+/css
+!/css/.gitkeep
+
+/js
+!/js/.gitkeep

@@ -1,0 +1,24 @@
+{
+	"name": "scroll-detector-dev",
+	"version": "1.0.0",
+	"description": "Development package for https://github.com/wUFr/scroll-detector",
+	"main": "src/ScrollDetector.ts",
+	"types": "src/ScrollType.ts",
+	"repository": "git@github.com:wUFr/scroll-detector-dev.git",
+	"author": "Jiří Bělský",
+	"license": "BSD-3-Clause",
+	"dependencies": {},
+	"devDependencies": {
+		"laravel-mix": "^6.0.17",
+		"less": "^4.1.1",
+		"less-loader": "^8.1.1",
+		"postcss": "^8.1",
+		"ts-loader": "^8.0.14",
+		"typescript": "^4.1.3"
+	},
+	"scripts": {
+		"watch": "tsc && npx mix watch  --mix-config=webpack.mix",
+		"build": "tsc && npx mix --mix-config=webpack.mix",
+		"prepublish": "tsc"
+	}
+}
