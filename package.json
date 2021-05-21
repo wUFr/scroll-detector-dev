@@ -1,10 +1,10 @@
 {
-	"name": "scroll-detector-dev",
+	"name": "@wufr/scroll-detector-dev",
 	"version": "1.0.0",
 	"description": "Development package for https://github.com/wUFr/scroll-detector",
 	"main": "src/ScrollDetector.ts",
 	"types": "src/ScrollType.ts",
-	"repository": "git@github.com:wUFr/scroll-detector-dev.git",
+	"repository": "git://github.com/wUFr/scroll-detector-dev.git",
 	"author": "Jiří Bělský",
 	"license": "BSD-3-Clause",
 	"dependencies": {},
@@ -17,8 +17,8 @@
 		"typescript": "^4.1.3"
 	},
 	"scripts": {
-		"watch": "npx mix watch  --mix-config=webpack.mix",
-		"build": "npx mix --mix-config=webpack.mix",
+		"watch": "NODE_ENV=development npx mix watch --mix-config=webpack.mix",
+		"build": "NODE_ENV=production npx mix --mix-config=webpack.mix",
 		"prepublish": "tsc"
 	}
 }
